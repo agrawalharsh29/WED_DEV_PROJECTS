@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+body{
+	background: linear-gradient(to top, #ccffff 100%, #ffffff 50%);
+}
+</style>
+<body>
+	<center><h1>Hi!! Here you can update your details!!</h1></center>
+	<div class="det" style="text-align: center;margin-top: 50px;">
+<form action ="http://localhost:8000/t_details?_method=put" method="post" enctype="multipart/form-data">
+	Enter your ID please - <input type="text" name="t_id"><br><br>
+	Enter your Name - <input type="text" name ="t_name"><br><br>
+	Enter Your Project -<input type ="text" name ="t_project"><br><br>
+	Enter the availability - <input type ="text" name ="t_availability"><br><br>
+	Enter no. of Interns - <input type ="text" name ="t_no"><br><br>
+	<input class="form-control" type="file" name="uploaded_image" accept=""/><br><br>
+
+	<input type ="submit" value="UPDATE"><br><br>
+</form>
+</div>
+</body>
+
+</html>
