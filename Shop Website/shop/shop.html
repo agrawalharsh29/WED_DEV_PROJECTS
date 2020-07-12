@@ -7,6 +7,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+<script type="text/javascript" src="magicscroll/magicscroll.js"></script>
 
 </head>
 <style>
@@ -127,6 +129,73 @@ navbar-light .navbar-toggler-icon {
 #det{
 	margin-left: 30px;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border:1px solid orange;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.hrdivider {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  /*text-align: center;*/
+}
+
+.hrdivider span {
+  position: absolute;
+  top: -11px;
+  background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 40%;
+}
+
+svg {
+  height: 50%;
+  width: 50%;
+}
+path {
+  fill: white;
+  stroke: black;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+path:hover {
+  fill: aliceblue;
+  stroke: lightskyblue;
+}
+.new-baby{
+	background-color: #f0ece9;
+}
+
 @media screen and (max-width: 1200px) {
     .banner{
     	height:800px;
@@ -333,7 +402,12 @@ hr{
 	</div>
 </div>
 </div><br><br>
-<div id="abt" style="width: 100%;background-color: #f0ece9;">
+
+
+
+
+
+<div id="abt" style="width: 100%;background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);">
  <div class="row" style="width:100%;">
  	<div class="container">
 	<!-- <div class="col-sm-6">
@@ -346,16 +420,81 @@ hr{
 			<br>
 			<div class="container">
 				<b><center><i><h6>" Give children toys that are powered by their imagination, not by batteries!! "</h6></i><br></center></b>
-			<h5> We deals in a wide range of toys which includes new born baby products, musical toys, board games, cycles, tricycles, jhoola etc. </h5>
-			<h5> We bring the best baby products - design wise, safety wise, quality wise and cost wise. Get everthing that a new born baby needs and we also take care of your childs fitness by providing fitness products for your baby.</h5>
-			<h5> Our aim is to provide best services and satisfy every customer with honesty, integrity and respactibility.</h5>
+			<h5 style="text-align: center;"> We deals in a wide range of toys which includes new born baby products, musical toys, board games, cycles, tricycles, jhoola etc. </h5>
+			<h5 style="text-align: center;"> We bring the best baby products - design wise, safety wise, quality wise and cost wise. Get everthing that a new born baby needs and we also take care of your childs fitness by providing fitness products for your baby.</h5>
+			<h5 style="text-align: center;"> Our aim is to provide best services and satisfy every customer with honesty, integrity and respactibility.</h5>
 				<b><center><h5><br>Do visit once!!</h5></center></b><br>
 		<!-- </div> -->
 		</div>
 	<!-- </div> -->
 	</div>
 </div>
+</div><br><br>
+<div class="hrdivider">
+  <hr/>
+  <span>FEATURED PRODUCTS</span>
 </div>
+<br>
+<div class="featured" style="width: 100%;">
+	<div class="row" style="width: 100%;">
+		<div class="col-sm-3">
+<div class="card">
+  <img src="imgs/p29.jpg" alt="Denim Jeans" style="width:100%;height: 250px;">
+  <!-- <h1>Tailored Jeans</h1> -->
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <!-- <p><button>Add to Cart</button></p> -->
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card">
+  <img src="imgs/p19.jpeg" alt="Denim Jeans" style="width:100%;height: 250px;">
+  <!-- <h1>Tailored Jeans</h1> -->
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <!-- <p><button>Add to Cart</button></p> -->
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card">
+  <img src="imgs/p5.jpeg" alt="Denim Jeans" style="width:100%">
+  <!-- <h1>Tailored Jeans</h1> -->
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <!-- <p><button>Add to Cart</button></p> -->
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card">
+  <img src="imgs/p8.jpeg" alt="Denim Jeans" style="width:100%">
+  <!-- <h1>Tailored Jeans</h1> -->
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <!-- <p><button>Add to Cart</button></p> -->
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<!-- <div class="new-baby">
+	<div class="hrdivider">
+  <hr/>
+  <span>BABY PRODUCTS</span>
+</div>
+	<div class="row" style="width: 100%">
+		<div class="col-sm-6">
+<img src ="imgs/moving-baby.gif" style="width: 500px;height: 300px;margin-left: 50px;">
+</div>
+<div class="col-sm-6">
+	<div class="content" style="margin-left: -50px;margin-top: 40px;">
+	<center><h2 style="font-family: Ubuntu;font-weight: bold;color:#ff8400;font-size: 32px;">Get Everything a new born</h2></center><center><h4 style="font-family: Ubuntu;font-weight: bold;color: #ff8400;font-size: 32px;"> child needs!</h4></center>
+		<center><p style="color: #c70e0e;">Have a look at our baby products!!</p></center>
+		<center><a href="baby_prod.html"><button style="background-color:transparent;color: black; padding: 12px;border-radius: 25px;border: 1px solid orange;font-size: 12px;font-weight: bold;font-family: Ubuntu;">BABY PRODUCTS</button></a></center>
+	</div>
+</div>
+</div>
+</div> -->
+
 <div class="bpd" style="width:100%;">
 <div class="baby-products">
 
@@ -363,16 +502,35 @@ hr{
 
 	<div class="baby-content">
 
-		<h4 style="font-family: Ubuntu;font-weight: bold;">Get Everything a new born</h4><h4 style="font-family: Ubuntu;font-weight: bold;margin-left: 60px;"> child needs!</h4>
-		<p style="margin-left: 20px;">Have a look at our baby products!!</p>
-		<a href="baby_prod.html"><button style="background-color: #0d1724;color: white; padding: 12px;border-radius: 25px;border: 1px solid #0d1724;margin-left: 70px;">PRODUCTS</button></a>
+		<center><h4 style="font-family: Ubuntu;font-weight: bold;color: orange;">Get Everything a new born</h4></center><center><h4 style="font-family: Ubuntu;font-weight: bold;color: orange;"> child needs!</h4></center>
+		<center><p style="color: orange;" >Have a look at our baby products!!</p></center>
+		<center><a href="baby_prod.html"><button style="background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);color: white; padding: 12px;border-radius: 25px;border: 1px solid orange;font-size: 12px;">BABY PRODUCTS</button></a></center>
 	</div>
 </div>
 	</div>
 </div><br>
+
+<!-- <svg viewBox='0 0 105 105'>
+  <path d='M 25,60 
+           a 20,20 1 0,0 0,40 
+           h 50 
+           a 20,20 1 0,0 0,-40 
+           a 10,10 1 0,0 -15,-10 
+           a 15,15 1 0,0 -35,10  
+           z' />
+
+           <p>hello</p>
+</svg> -->
+
+
 	<div class="seqp" style="width: 100%;">
-	<center><h5>Check out our School Equipments!</h5></center>
-         <hr style="background-color:red;width:20%;"><br>
+
+		<div class="hrdivider">
+  <hr/>
+  <span>SCHOOL EQUIPMENTS</span>
+</div>
+	<!-- <center><h5 style="font-weight: bold;font-family: Ubuntu;">Check out our School Equipments!</h5></center>
+         <hr style="background-color:red;width:20%;"><br> -->
      </div>
      <div class="sqp" style="width: 100%">
 	<div class="row" style="width: 100%;">
@@ -390,7 +548,7 @@ hr{
 			<img src="imgs/p62.jpg"width="300px"height="300px" id="simg">
 			
 		</div>
-		<a href="school.html"><center><button style="background-color: #0d1724;color: white; padding: 12px;border-radius: 25px;border: 1px solid #0d1724;margin-top: 20px;" id="shbtn">PRODUCTS</button></center></a>
+		<a href="school.html"><center><button style="background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);color: white; padding: 12px;border-radius: 25px;border: 1px solid orange;margin-top: 20px;" id="shbtn">PRODUCTS</button></center></a>
 </div><br>
 	<!-- <div class="glimpse">
 <h4><center>Get some glimpse of the shop!!</center></h4>
@@ -420,7 +578,7 @@ hr{
   </a> -->
 <!-- </div>
 </div><br> -->
-<div class="tricycle" style="width: 100%;background-color: #f0ece9;">
+<!-- <div class="tricycle" style="width: 100%;background-color: #f0ece9;">
 <div class="row" style="width:100%;">
 	
 	<div class="col-sm-6">
@@ -458,7 +616,7 @@ hr{
 		
 	</div>
 </div>
-</div>
+</div> -->
 
 <div class="contact" style="width: 100%;">
     <div class="row" style="width:100%;">
