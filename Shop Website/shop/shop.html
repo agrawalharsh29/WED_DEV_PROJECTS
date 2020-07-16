@@ -9,6 +9,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
 <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
 </head>
 <style>
@@ -20,11 +25,6 @@ html {
 }
 
 .banner{
-	/*background-image: url('C:/Users/HARSH AGRAWAL/Desktop/shop/shop12.jpg');
-	width: 100%;
-	height: 650px;
-	background-size: cover;
-	background-position: center;*/
 	background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);
 	height: 560px;
 	
@@ -43,91 +43,39 @@ a.navbar-brand{
     	border-radius: 50%;
     	margin-left: 20px;
     }
-    .story{
-    	width:400px;
-    	height:500px;
-    	/*background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);*/
-    	background-color: rgb(0,0,0,0.1);
-    	margin-left: 100px;
-    	border-radius: 20%;
-    	margin-top: 30px;
 
-
-    }
     #ab{
     	margin-top: 50px;border-radius: 50%;margin-left: 150px;
     }
-    /*.carousel {
-  width:1100px;
-  height:500px;
-  margin-top: 50px;
-  margin-left: 110px;
-}*/
 .contact{
 	width:100%;
-	height:600px;
-	/*background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);*/
+	height:620px;
+	background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 80%);
 
 }
 .box{
 	width:100%;
-	height:90px;
+	height:15%;
 	background-color: rgb(0,0,0,0.1);
-	/*margin-left: 100px;*/
 	margin-top: 50px;
 }
 #btn{
-	margin-left: 240px;
-}
-
-.baby-products{
-	background-image: url('imgs/shop12.jpg');
-	width:100%;
-	height: 550px;
-	background-size: cover;
-}
-
-.baby-content{
-	width:400px;
-	height:400px;
-	margin-top: 180px;
-	margin-left: 100px;
-	position: absolute;
+	margin-left: 40%;
 }
 #school:hover{
 	transform: scale(1.1);
       transition:all .9s ease;
 }
-#shbtn{
-	margin-left: 600px;
-}
-.glimpse{
-	display:none;
-}
-
-#cycle{
-	border-radius: 50%;
-	margin-top: 20px;
-}
-.cycle-content{
-	width:500px;
-	height: 500px;
-	margin-top: 250px;
-	margin-left: 30px;
-}
 
 h2{
 	font-size: 25px;
-}
-.img{
-	margin-left: 0px;
 }
 
 navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;..");
 }
 #det{
-	margin-left: 30px;
+	margin-left: 5%;
 }
 
 .card {
@@ -178,24 +126,98 @@ navbar-light .navbar-toggler-icon {
   margin-left: 40%;
 }
 
-svg {
-  height: 50%;
-  width: 50%;
-}
-path {
-  fill: white;
-  stroke: black;
-  stroke-width: 2;
-  stroke-linejoin: round;
-}
-path:hover {
-  fill: aliceblue;
-  stroke: lightskyblue;
-}
-.new-baby{
-	background-color: #f0ece9;
-}
+.demo{ 
+  background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 80%);
+    
+ }
+.testimonial{
+    /*margin: 120px 80px 80px 80px;*/
+    margin-top: 80px;
+    margin-left: 15%;
+    text-align: center;
+    position: relative;
 
+}
+.testimonial .description{
+    padding: 30px;
+    margin-bottom: 50px;
+    border-left: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    line-height: 33px;
+    position: relative;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+.testimonial .description:before,
+.testimonial .description:after{
+    content: "";
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testimonial .description:after{
+    top: auto;
+    bottom: 0;
+}
+.testimonial .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.testimonial:before,
+.testimonial .title:before{
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+.testimonial .title:before{ top: -80px; }
+.testimonial .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-page span{
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background: #000;
+    outline: 2px solid #000;
+    outline-offset: 2px;
+    margin-right: 18px;
+    margin-left:    300%;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    background: #fff;
+    outline: 2px solid #fff;
+}
+.dropdown-item:hover{
+  background-color: orange;
+  color: white;
+}
 @media screen and (max-width: 1200px) {
     .banner{
     	height:800px;
@@ -214,44 +236,22 @@ path:hover {
     }
     h3{
     	font-size:15px;
-    	/*margin-left: 45px;*/
     	margin-top:0px;
-    }
-    .story{
-    	width:350px;
-    	height: 550px;
     }
     #ab{
     	margin-left: 40px;
     }
-    #marq{
-    	display:none;
-    }
     #img{
     	margin-top: 10px;
     	border-radius: 50%;
-    	width: 300px;
-    	margin-left: 40px;
+    	width: 250px;
+      height: 250px;
+    	margin-left: 15%;
     }
     #btn{
-    	margin-left: 130px;
+    	margin-left: 40%;
     }
    
-.baby-products{
-	width:100%;
-	background-size: cover;
-	background-origin: center;
-	background-position: center;
-	z-index: -1;
-	opacity: 0.8;
-}
-.baby-content{
-	z-index: 2;
-	color:black;
-	margin-left: 0px;
-	font-weight: bolder;
-	width: 300px;
-}
 #school{
 	width: 100%;
 	padding: 10px;
@@ -269,20 +269,7 @@ path:hover {
 	height: 250px;
 	margin-left: 50px;
 }
-#cycle{
-	width: 250px;
-	height: 250px;
-	margin-left: 50px;
-	margin-top: 20px;
-}
-/*.cycle-content h2{
-	font-size: 28px;
-}*/
-.cycle-content{
-	height:200px;
-	margin-top: 60px;
-	width: 90%;
-}
+
 #last{
 	margin-top: 10px;
 	width:300px;
@@ -335,9 +322,27 @@ hr{
 .card{
 	margin-top: 20px;
 }
-
+.contact{
+  height: 1040px;
+}
+.owl-theme .owl-controls .owl-page span{
+  margin-left: 130%;
+}
 }
 </style>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[769,1],
+        pagination:true,
+        transitionStyle:"goDown",
+        autoplay:true
+    });
+});
+</script>
 <body>
 
 
@@ -350,14 +355,26 @@ hr{
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto"  style="margin-right: 20px;font-family: Ubuntu;font-size: 18px;color: #0d1724;">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#shop.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#abt">About Us</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="products.html">Products</a>
-      </li>  
+      </li>   -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Poducts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #141e2e;color: white;">
+          <a class="dropdown-item" href="baby_prod.html" style="color: white;">Baby Products</a>
+         
+          <a class="dropdown-item" href="school.html" style="color: white;">School Products</a>
+          <a class="dropdown-item" href="cycles.html" style="color: white;">Toddler Products</a>
+
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
       </li>  
@@ -381,22 +398,7 @@ hr{
 	</div>
 </div>
 </div>
-<!-- <marquee behavior="slide" margin="40px"margin-right="20px"  direction="left" id="marq">
-<img src="shop1.jpg" width="300px" height="300" alt="Flying Bat"id="img">
-<img src="shop2.jpg" width="300px" height="300" alt="Flying Bat"id="img">
-<img src="shop8.jpg" width="300" height="300" alt="Flying Bat"id="img">
-<img src="shop10.jpg" width="300" height="300" alt="Flying Bat"id="img"> -->
-<!-- <img src="shop1.jpg" width="300px" height="300" alt="Flying Bat"id="img">
-<img src="shop2.jpg" width="300px" height="300" alt="Flying Bat"id="img">
-<img src="shop8.jpg" width="300" height="300" alt="Flying Bat"id="img">
-<img src="shop10.jpg" width="300" height="300" alt="Flying Bat"id="img"> -->
 
-
-<!-- </marquee> -->
-<!-- <div class="container" style="width:100%;background-color: grey;">
-
-
- -->
 <div class="arrival" style="margin-top: 100px;width:100%;">
 	<center><h3>Latest Arrivals!!</h3></center>
          <hr style="background-color:red;width:15%;">
@@ -431,11 +433,6 @@ hr{
 <div id="abt" style="width: 100%;background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);">
  <div class="row" style="width:100%;">
  	<div class="container">
-	<!-- <div class="col-sm-6">
-		<img src="about.jpeg" width="450px" height="450px" class="ab" id="ab">
-	</div> -->
-	<!-- <div class="col-sm-6"> -->
-		<!-- <div class="story"><br> -->
 			<center><h4 style="margin-top: 10px;">About Us</h4></center>
          <hr style="background-color:red;width:10%;">
 			<br>
@@ -445,9 +442,8 @@ hr{
 			<h5 style="text-align: center;"> We bring the best baby products - design wise, safety wise, quality wise and cost wise. Get everthing that a new born baby needs and we also take care of your childs fitness by providing fitness products for your baby.</h5>
 			<h5 style="text-align: center;"> Our aim is to provide best services and satisfy every customer with honesty, integrity and respactibility.</h5>
 				<b><center><h5><br>Do visit once!!</h5></center></b><br>
-		<!-- </div> -->
 		</div>
-	<!-- </div> -->
+
 	</div>
 </div>
 </div><br><br>
@@ -462,8 +458,8 @@ hr{
 <div class="card">
   <img src="imgs/p29.jpg" alt="Denim Jeans" style="width:100%;height: 250px;">
   <!-- <h1>Tailored Jeans</h1> -->
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
+  <p class="price">Rs 2450</p>
+  <p>Dash walker with adjustable size..</p>
   <!-- <p><button>Add to Cart</button></p> -->
 </div>
 </div>
@@ -471,8 +467,8 @@ hr{
 <div class="card">
   <img src="imgs/p19.jpeg" alt="Denim Jeans" style="width:100%;height: 250px;">
   <!-- <h1>Tailored Jeans</h1> -->
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
+  <p class="price">Rs 650</p>
+  <p>Lovely doll..</p>
   <!-- <p><button>Add to Cart</button></p> -->
 </div>
 </div>
@@ -480,8 +476,8 @@ hr{
 <div class="card">
   <img src="imgs/p5.jpeg" alt="Denim Jeans" style="width:100%">
   <!-- <h1>Tailored Jeans</h1> -->
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
+  <p class="price">Rs 550</p>
+  <p>Flowe girl..</p>
   <!-- <p><button>Add to Cart</button></p> -->
 </div>
 </div>
@@ -489,59 +485,50 @@ hr{
 <div class="card">
   <img src="imgs/p8.jpeg" alt="Denim Jeans" style="width:100%">
   <!-- <h1>Tailored Jeans</h1> -->
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
+  <p class="price">Rs 2150</p>
+  <p>Pram Doll with light and sound..</p>
   <!-- <p><button>Add to Cart</button></p> -->
 </div>
 </div>
 </div>
 </div>
 <br><br>
-<!-- <div class="new-baby">
-	<div class="hrdivider">
-  <hr/>
-  <span>BABY PRODUCTS</span>
+
+<div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+              <br>
+             <center> <h2 style="margin-left: 15%;color: black; font-weight: bold;font-family: Ubuntu;font-size: 30px;">What our Customers say!!</h2></center>
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <p class="description">
+                            " Amazing products at best prices, highly recommended shop, you will surely make it your go to place whenever you shop :) "
+                        </p>
+                        <h3 class="title">HARSH</h3>
+                        <div class="pic">
+                            <img src="imgs/harsh.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <p class="description">
+                            " Highly Recommended!<br>
+                          A Trusted place having wide collection & good quality products, especially for buying Toys and Bicycles for kids .
+ "
+                        </p>
+                        <h3 class="title">NIKHIL</h3>
+                        <div class="pic">
+                            <img src="imgs/nkhil.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-	<div class="row" style="width: 100%">
-		<div class="col-sm-6">
-<img src ="imgs/moving-baby.gif" style="width: 500px;height: 300px;margin-left: 50px;">
-</div>
-<div class="col-sm-6">
-	<div class="content" style="margin-left: -50px;margin-top: 40px;">
-	<center><h2 style="font-family: Ubuntu;font-weight: bold;color:#ff8400;font-size: 32px;">Get Everything a new born</h2></center><center><h4 style="font-family: Ubuntu;font-weight: bold;color: #ff8400;font-size: 32px;"> child needs!</h4></center>
-		<center><p style="color: #c70e0e;">Have a look at our baby products!!</p></center>
-		<center><a href="baby_prod.html"><button style="background-color:transparent;color: black; padding: 12px;border-radius: 25px;border: 1px solid orange;font-size: 12px;font-weight: bold;font-family: Ubuntu;">BABY PRODUCTS</button></a></center>
-	</div>
-</div>
-</div>
-</div> -->
+<br>
 
-<div class="bpd" style="width:100%;">
-<div class="baby-products">
 
-	<!-- <img src="shop12.jpg" width="1100px" height="550px"> -->
-
-	<div class="baby-content">
-
-		<center><h4 style="font-family: Ubuntu;font-weight: bold;color: orange;">Get Everything a new born</h4></center><center><h4 style="font-family: Ubuntu;font-weight: bold;color: orange;"> child needs!</h4></center>
-		<center><p style="color: orange;" >Have a look at our baby products!!</p></center>
-		<center><a href="baby_prod.html"><button style="background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);color: white; padding: 12px;border-radius: 25px;border: 1px solid orange;font-size: 12px;">BABY PRODUCTS</button></a></center>
-	</div>
-</div>
-	</div>
-</div><br>
-
-<!-- <svg viewBox='0 0 105 105'>
-  <path d='M 25,60 
-           a 20,20 1 0,0 0,40 
-           h 50 
-           a 20,20 1 0,0 0,-40 
-           a 10,10 1 0,0 -15,-10 
-           a 15,15 1 0,0 -35,10  
-           z' />
-
-           <p>hello</p>
-</svg> -->
 
 
 	<div class="seqp" style="width: 100%;">
@@ -569,75 +556,8 @@ hr{
 			<img src="imgs/p62.jpg"width="300px"height="300px" id="simg">
 			
 		</div>
-		<a href="school.html"><center><button style="background: linear-gradient(to bottom right, #ffff00 0%, #ff6600 102%);color: white; padding: 12px;border-radius: 25px;border: 1px solid orange;margin-top: 20px;" id="shbtn">PRODUCTS</button></center></a>
 </div><br>
-	<!-- <div class="glimpse">
-<h4><center>Get some glimpse of the shop!!</center></h4>
-         <hr style="background-color:red;width:30%;">
-
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="imgs/about1.jpeg" alt="First slide" height="550px;">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="imgs/shop15.jpg" alt="Second slide" height="550px;" >
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="imgs/shop12.jpg" alt="Second slide" height="550px;" > -->
-
-      <!-- <img class="d-block w-100" src="about1.jpeg" alt="Third slide" > -->
-    <!-- </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
-<!-- </div>
-</div><br> -->
-<!-- <div class="tricycle" style="width: 100%;background-color: #f0ece9;">
-<div class="row" style="width:100%;">
 	
-	<div class="col-sm-6">
-
-		<div class="cycle-content">
-
-		<h2 style="font-family: Ubuntu;font-weight: bold;">We also Deals in cycles,tricycles,</h2><h2 style="font-family: Ubuntu;font-weight: bold;margin-left: 60px;"> walker,Jhool etc!</h2>
-		<p style="margin-left: 40px;">Have a look at the products!!</p>
-		<a href="cycles.html"><button style="background-color: #0d1724;color: white; padding: 12px;border-radius: 25px;border: 1px solid #0d1724;margin-left: 100px;">PRODUCTS</button></a>
-	</div>
-
-	</div>
-	<div class="col-sm-6">
-		<div class="row" style="width: 100%;">
-			<div class="col-sm-6">
-				<img src="imgs/ad12.jpg" width="300px" height="300px" id="cycle">
-			</div>
-			<div class="col-sm-6">
-				<img src="imgs/shop13.jpg" width="300px" height="300px" id="cycle">
-
-			</div>
-		</div>
-		<div class="row" style="width: 100%;">
-			<div class="col-sm-6">
-				<img src="imgs/shop7.jpg" width="300px" height="300px" id="cycle">
-
-			</div>
-			<div class="col-sm-6">
-				<img src="imgs/shop19.jpeg" width="300px" height="300px" id="cycle">
-
-			</div>
-		</div>
-		
-		
-		
-	</div>
-</div>
-</div> -->
 
 <div class="contact" style="width: 100%;">
     <div class="row" style="width:100%;">
@@ -679,22 +599,13 @@ hr{
               <!-- <button type="submit"><span>Send Message</span>
               </button> -->
 
-              <center><button type="submit" name="submit" class="btn btn-primary">Send Message</button></center>
+              <center><button type="submit" name="submit" class="btn btn-primary" style="background-color: black;color: white;">Send Message</button></center>
             </div>
           </form>
     </div>
     <div class="col-sm-6" id="last">
     	<img src="imgs/shop20.png" id="limg" width="550px" height="400px" style="margin-top: -60px;margin-left: 70px;">
-    	<!-- <div class="box">
-    		<br>
-    		<center><h3> Visit us at:</h3></center><br>
-    		<a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="gm.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">EMAIL</span><p style="margin-top: -10px;margin-left: 100px;color: white;">agrawalharsh189@gmail.com</p>
-    
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="cn.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">CONTACT</span><p style="margin-top: -10px;margin-left: 100px;color: white">09835443505</p>
-
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="ln.png" width="30px" height="30px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">ADDRESS</span><p style="margin-top: -10px;margin-left: 100px;color: white">Boring Road, Patna.</p>
-    	</div>
-    </div> -->
+    	
     </div>
     
   </div>
@@ -707,15 +618,16 @@ hr{
 	<div class="row" style="width: 100%;">
 		<div class="col-sm-4" id="contact">
  
-    		<a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/gm.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;margin-top: 15px;">EMAIL</span><p style="margin-top: -10px;margin-left: 100px;color: grey;">siddhicollectionpatna@gmail.com</p>
+    		<a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/gm.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;margin-top: 15px;">EMAIL</span><p style="margin-top: -10px;margin-left: 100px;color: black;">siddhicollectionpatna@gmail.com</p>
     	</div>
     <div class="col-sm-4" id="contact">
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/cn.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">CONTACT</span><p style="margin-top: -10px;margin-left: 100px;color: grey">9334592422</p>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/cn.png" width="28px" height="28px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">CONTACT</span><p style="margin-top: -10px;margin-left: 100px;color: black;">9334592422</p>
 </div>
 <div class="col-sm-4" id="contact">
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/ln.png" width="30px" height="30px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">ADDRESS</span><p style="margin-top: -10px;margin-left: 100px;color: grey">shop no.15, Jagdish Lok Complex, West Boring Canal Road,Patna.</p>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="imgs/ln.png" width="30px" height="30px" style="margin-left: 50px;margin-top: 10px;"> </a><span style="font-weight: bold;font-size: 15px;">ADDRESS</span><p style="margin-top: -10px;margin-left: 100px;color: black;">shop no.15, Jagdish Lok Complex, West Boring Canal Road,Patna.</p>
     	</div>
     </div>
+</div>
 </div>
 
 </body>
